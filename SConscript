@@ -2,16 +2,16 @@ from building import *
 import os
 
 cwd     = GetCurrentDir()
-CPPPATH = [cwd + '/../OpENer/source/src']
-CPPPATH += [cwd + '/../OpENer/source/src/cip']
-CPPPATH += [cwd + '/../OpENer/source/src/enet_encap']
-CPPPATH += [cwd + '/../OpENer/source/src/utils']
-CPPPATH += [cwd + '/../OpENer/source/src/ports']
+CPPPATH = [cwd + '/../OpENer-latest/source/src']
+CPPPATH += [cwd + '/../OpENer-latest/source/src/cip']
+CPPPATH += [cwd + '/../OpENer-latest/source/src/enet_encap']
+CPPPATH += [cwd + '/../OpENer-latest/source/src/utils']
+CPPPATH += [cwd + '/../OpENer-latest/source/src/ports']
 
-src = Glob('../OpENer/source/src/cip/*.c')
-src += Glob('../OpENer/source/src/enet_encap/*.c')
-src += Glob('../OpENer/source/src/utils/*.c')
-src += Glob('../OpENersource/src/ports/*.c')
+src = Glob('../OpENer-latest/source/src/cip/*.c')
+src += Glob('../OpENer-latest/source/src/enet_encap/*.c')
+src += Glob('../OpENer-latest/source/src/utils/*.c')
+src += Glob('../OpENer-latest/source/src/ports/*.c')
 
 CPPDEFINES = ['OPENER_CONSUMED_DATA_HAS_RUN_IDLE_HEADER']
 CPPDEFINES += ['RESTRICT=__restrict']
